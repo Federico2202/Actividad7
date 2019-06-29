@@ -5,31 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            width: 40%;
+            margin: auto;
+            display: grid;
+            color: white;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 13em);
+            font-family: sans-serif;
+        }
+    
+        .Primer{
+            background: lightblue;
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            box-sizing: border-box;
+            border: solid 3px black; 
+        }
+
+        .Primer h1{
+            padding-left: .5em;
+        }
+        .Primer li{
+            padding-left: 1em;
+        }
+
+        .Primer a{
+            text-decoration: none;
+            font-weight: lighter;
+            color: white;
+        }
+
+        .Segundo{
+            background: orange;
+            border: solid 3px black;
+            width: 100%;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            box-sizing: border-box;
+            padding: 2em;
+        }
+
+        .Segundo #Import{
+            box-sizing: border-box;
+            padding-right: 2em;
+        }
+
+        .Segundo #Big{
+            font-size: 3em;
+        }
+
+        .Tercer{
+            background-color:coral;
+            border: solid 3px black;
+            width: 100%;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            box-sizing: border-box; 
+        }
+
+        .Tercer ol{
+            padding-left: 2em; 
+        }
+
+        .Tercer h1{
+            padding-left: 1em;
+        }
+        
+        .Cuarto{
+            background-color: whitesmoke;
+            border:solid 3px black;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .Cuarto p{
+            margin: 0;
+            padding-right: 1em; 
+            font-size: 2em;
+            color: black;
+        }
+    
+    </style>
+
 </head>
 <body>
 
-    <div>
-
+    <div class="Primer">
         <h1>Features</h1>
-        <li><a href="">Link1</a></li>
-        <li><a href="">Link2</a></li>
-        <li><a href="">Link3</a></li>
-
+        <li><a href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
     </div>
-    <div>
 
-                
-
+    <div class="Segundo" dir="rtl">
+        <span id="Import"> Importante interview </span>
+        <span id="p2">3:00 - 4:00</span></br>
+        <span>December</span>
+        <span id="Big">15</span>
     </div>
-    <div>
 
-                
-
+    <div class="Tercer">
+        <h1>TODO</h1>
+        <ol>
+            <li>Build Website</li>
+            <li>Build App</li>
+            <li>Build Games</li>
+        </ol>
     </div>
-    <div>
 
-                
-
+    <div class="Cuarto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89SjlG1-an5oEkiUXx01gc2UXvlwpFwCn1i7TzTlMUSWd8LtY" width="150" height="150" alt="diagrama">        
+        <p dir="rtl">4800</p>
     </div>
     
 </body>
